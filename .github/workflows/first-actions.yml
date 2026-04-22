@@ -8,7 +8,7 @@ on: [push] #A push-based automation that's triggered when code is pushed, or a n
 #Jobs Section
 jobs: #A group of steps that run on a machine, and the name of the job here is 'build'
   build:
-    runs-on: self-hosted #Execution environment for this job is on Linux (Ubuntu) hosted by GitHub
+    runs-on: ubuntu-latest #Execution environment for this job is on Linux (Ubuntu) hosted by GitHub
 
 #Matrix Build: This code runs the same job two times on v3.8 and v3.9 of Python
     strategy:
